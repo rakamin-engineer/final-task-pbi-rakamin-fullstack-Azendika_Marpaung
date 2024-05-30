@@ -1,9 +1,9 @@
 package app
 
 import (
-	"PROJECT_BTPN/database"
-	"PROJECT_BTPN/helpers"
-	"PROJECT_BTPN/models"
+	"PROJECT/database"
+	"PROJECT/helpers"
+	"PROJECT/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

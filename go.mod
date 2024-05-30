@@ -1,4 +1,4 @@
-module PROJECT_BTPN
+module PROJECT
 
 go 1.22.3
 

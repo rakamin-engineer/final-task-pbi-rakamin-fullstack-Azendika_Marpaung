@@ -9,7 +9,7 @@ type User struct {
 	Username  string  `gorm:"unique;not null"`
 	Email     string  `gorm:"unique;not null"`
 	Password  string  `gorm:"not null"`
-	Photos    []Photo `gorm:"constraint:OnDelete:CASCADE;"`
+	Photo     []Photo `gorm:"constraint:OnDelete:CASCADE;"`
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }

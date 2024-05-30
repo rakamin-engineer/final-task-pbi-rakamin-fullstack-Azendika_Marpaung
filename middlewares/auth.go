@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"PROJECT_BTPN/helpers"
+	"PROJECT/helpers"
 	"net/http"
 	"strings"
 

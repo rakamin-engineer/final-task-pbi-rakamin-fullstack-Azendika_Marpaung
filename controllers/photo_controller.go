@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"PROJECT_BTPN/database"
-	"PROJECT_BTPN/models"
+	"PROJECT/database"
+	"PROJECT/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -22,11 +22,11 @@ func CreatePhoto(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"data": photo})
 }
 
-func GetPhotos(c *gin.Context) {
-	var photos []models.Photo
-	database.DB.Find(&photos)
+func GetPhoto(c *gin.Context) {
+	var photo []models.Photo
+	database.DB.Find(&photo)
 
-	c.JSON(http.StatusOK, gin.H{"data": photos})
+	c.JSON(http.StatusOK, gin.H{"data": photo})
 }
 
 func UpdatePhoto(c *gin.Context) {

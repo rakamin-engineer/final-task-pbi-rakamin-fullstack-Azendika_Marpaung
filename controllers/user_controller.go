@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"PROJECT_BTPN/database"
-	"PROJECT_BTPN/models"
+	"PROJECT/database"
+	"PROJECT/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

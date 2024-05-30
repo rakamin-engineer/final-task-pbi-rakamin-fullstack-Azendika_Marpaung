@@ -1,10 +1,10 @@
 package main
 
 import (
-	"PROJECT_BTPN/app"
-	"PROJECT_BTPN/controllers"
-	"PROJECT_BTPN/database"
-	"PROJECT_BTPN/middlewares"
+	"PROJECT/app"
+	"PROJECT/controllers"
+	"PROJECT/database"
+	"PROJECT/middlewares"
 
 	"github.com/gin-gonic/gin"
 )
@@ -23,10 +23,10 @@ func main() {
 		authorized.PUT("/users/:userId", controllers.UpdateUser)
 		authorized.DELETE("/users/:userId", controllers.DeleteUser)
 
-		authorized.POST("/photos", controllers.CreatePhoto)
-		authorized.GET("/photos", controllers.GetPhotos)
-		authorized.PUT("/photos/:photoId", controllers.UpdatePhoto)
-		authorized.DELETE("/photos/:photoId", controllers.DeletePhoto)
+		authorized.POST("/photo", controllers.CreatePhoto)
+		authorized.GET("/photo", controllers.GetPhoto)
+		authorized.PUT("/photo/:photoId", controllers.UpdatePhoto)
+		authorized.DELETE("/photo/:photoId", controllers.DeletePhoto)
 	}
 
 	r.Run()
